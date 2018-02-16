@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMovingCat));
             this.mnuMenu = new System.Windows.Forms.MenuStrip();
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mniSelection = new System.Windows.Forms.ToolStripMenuItem();
             this.mniCat1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mniCat2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.picCat = new System.Windows.Forms.PictureBox();
             this.mnuMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCat)).BeginInit();
             this.SuspendLayout();
             // 
             // mnuMenu
@@ -59,7 +62,7 @@
             // mniExit
             // 
             this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(152, 22);
+            this.mniExit.Size = new System.Drawing.Size(92, 22);
             this.mniExit.Text = "Exit";
             this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
@@ -75,26 +78,37 @@
             // mniCat1
             // 
             this.mniCat1.Name = "mniCat1";
-            this.mniCat1.Size = new System.Drawing.Size(152, 22);
+            this.mniCat1.Size = new System.Drawing.Size(98, 22);
             this.mniCat1.Text = "Cat1";
             // 
             // mniCat2
             // 
             this.mniCat2.Name = "mniCat2";
-            this.mniCat2.Size = new System.Drawing.Size(152, 22);
+            this.mniCat2.Size = new System.Drawing.Size(98, 22);
             this.mniCat2.Text = "Cat2";
+            // 
+            // picCat
+            // 
+            this.picCat.Image = ((System.Drawing.Image)(resources.GetObject("picCat.Image")));
+            this.picCat.Location = new System.Drawing.Point(92, 91);
+            this.picCat.Name = "picCat";
+            this.picCat.Size = new System.Drawing.Size(110, 131);
+            this.picCat.TabIndex = 1;
+            this.picCat.TabStop = false;
             // 
             // frmMovingCat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(307, 273);
+            this.Controls.Add(this.picCat);
             this.Controls.Add(this.mnuMenu);
             this.MainMenuStrip = this.mnuMenu;
             this.Name = "frmMovingCat";
             this.Text = "Moving Cat By Tiva Rait";
             this.mnuMenu.ResumeLayout(false);
             this.mnuMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picCat)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,6 +122,7 @@
         private System.Windows.Forms.ToolStripMenuItem mniSelection;
         private System.Windows.Forms.ToolStripMenuItem mniCat1;
         private System.Windows.Forms.ToolStripMenuItem mniCat2;
+        private System.Windows.Forms.PictureBox picCat;
     }
 }
 
