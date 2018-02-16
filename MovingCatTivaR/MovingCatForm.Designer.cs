@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMovingCat));
             this.mnuMenu = new System.Windows.Forms.MenuStrip();
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,18 +77,20 @@
             // mniCat1
             // 
             this.mniCat1.Name = "mniCat1";
-            this.mniCat1.Size = new System.Drawing.Size(98, 22);
+            this.mniCat1.Size = new System.Drawing.Size(152, 22);
             this.mniCat1.Text = "Cat1";
+            this.mniCat1.Click += new System.EventHandler(this.mniCat1_Click);
             // 
             // mniCat2
             // 
             this.mniCat2.Name = "mniCat2";
-            this.mniCat2.Size = new System.Drawing.Size(98, 22);
+            this.mniCat2.Size = new System.Drawing.Size(152, 22);
             this.mniCat2.Text = "Cat2";
+            this.mniCat2.Click += new System.EventHandler(this.mniCat2_Click);
             // 
             // picCat
             // 
-            this.picCat.Image = ((System.Drawing.Image)(resources.GetObject("picCat.Image")));
+            this.picCat.Image = global::MovingCatTivaR.Properties.Resources.cat2;
             this.picCat.Location = new System.Drawing.Point(92, 91);
             this.picCat.Name = "picCat";
             this.picCat.Size = new System.Drawing.Size(110, 131);
@@ -100,6 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(307, 273);
             this.Controls.Add(this.picCat);
             this.Controls.Add(this.mnuMenu);
