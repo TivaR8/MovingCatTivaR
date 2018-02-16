@@ -32,6 +32,8 @@
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mniSelection = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniCat1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniCat2 = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,12 +61,28 @@
             this.mniExit.Name = "mniExit";
             this.mniExit.Size = new System.Drawing.Size(152, 22);
             this.mniExit.Text = "Exit";
+            this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
             // mniSelection
             // 
+            this.mniSelection.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniCat1,
+            this.mniCat2});
             this.mniSelection.Name = "mniSelection";
             this.mniSelection.Size = new System.Drawing.Size(67, 20);
             this.mniSelection.Text = "Selection";
+            // 
+            // mniCat1
+            // 
+            this.mniCat1.Name = "mniCat1";
+            this.mniCat1.Size = new System.Drawing.Size(152, 22);
+            this.mniCat1.Text = "Cat1";
+            // 
+            // mniCat2
+            // 
+            this.mniCat2.Name = "mniCat2";
+            this.mniCat2.Size = new System.Drawing.Size(152, 22);
+            this.mniCat2.Text = "Cat2";
             // 
             // frmMovingCat
             // 
@@ -88,6 +106,8 @@
         private System.Windows.Forms.ToolStripMenuItem mniFile;
         private System.Windows.Forms.ToolStripMenuItem mniExit;
         private System.Windows.Forms.ToolStripMenuItem mniSelection;
+        private System.Windows.Forms.ToolStripMenuItem mniCat1;
+        private System.Windows.Forms.ToolStripMenuItem mniCat2;
     }
 }
 
